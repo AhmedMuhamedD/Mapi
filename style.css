@@ -102,9 +102,14 @@ span {
     margin-bottom: 5px;
   }
   #inf {
-    font-size: 16px;
+    font-size: 14px;
   }
   .side {
     justify-content: center;
+    margin: 0 5px;
+  }
+  #latsp,
+  #longsp {
+    font-size: 12px;
   }
 }
