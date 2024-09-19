@@ -1,0 +1,110 @@
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-light--2);
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+
+  background-color: #fff;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  background-color: hsl(0, 0%, 24%);
+  padding: 3rem 5rem 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  flex: 1;
+}
+
+#map {
+  flex: 2;
+  height: 100%;
+  background-color: var(--color-light--1);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100vh;
+  margin: 10px;
+}
+
+#locateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: rgb(75, 170, 107);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+  width: 25rem;
+}
+#inf {
+  font-size: 18px;
+  color: #f3d77a;
+}
+span {
+  color: #ffffff;
+}
+
+#resetButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: rgb(107, 172, 216);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+  width: 25rem;
+}
+
+@media (max-width: 680px) {
+  #resetButton,
+  #locateButton {
+    width: 20rem;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  #inf {
+    font-size: 16px;
+  }
+  .side {
+    justify-content: center;
+  }
+}
